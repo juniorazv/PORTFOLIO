@@ -1,0 +1,168 @@
+:root {
+    --cor1: #b5dcf2;
+    --cor2: #4bc4ec;
+    --cor3: #000000;
+    --cor4: #f6f6f6;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../assets/background.png); /* Imagem de fundo */
+    background-size: cover;     /* Cobre toda a tela */
+    background-position: center center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    box-sizing: border-box; /* Altura total da tela */
+    color: var(--cor1);
+    background-color: var(--cor3)
+}
+
+.about {
+    background-image: url(../assets/background2.png); /* Imagem de fundo */
+}
+
+.header {
+    padding: 0.5%;
+    background-color: var(--cor3);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.links__menu {
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor2);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links__menu:hover {
+    color: var(--cor1);
+    text-shadow: 0 0 4px var(--cor1);
+    transition: all 0.3s ease;
+}
+
+main{
+    padding: 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;     /* Empilha os itens verticalmente */ 
+    justify-content: center;
+    align-items: center;        /* Centraliza horizontalmente */
+    height: 100vh;              /* Altura total da tela */
+    text-align: center;         /* Centraliza texto dentro dos elementos */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+.perfil {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: var(--cor1) solid 2px;
+    border: var(--cor1) solid 2px;
+    box-shadow: solid 0 0 5px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1);
+    padding: 5px;
+}
+
+.sobremim {
+    max-width: 250px;
+    padding: 5px;
+    height: auto;
+    border-radius: 3%;
+    border: var(--cor1) solid 2px;
+    box-shadow: solid 0 0 5px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1);
+    margin-top: -20px;
+
+}
+
+h1 {
+    font-family: "Iceberg", sans-serif;
+    font-size: 6rem;
+    margin-bottom: -30px;
+    margin-top: -20px;
+    text-shadow: var(--cor3) 3px 2px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-shadow: var(--cor3) 3px 1px 1px;
+    margin-bottom: 5px;
+}
+
+.socials-container {
+    padding: 20px;
+    gap: 10px;              /* Espaçamento entre os itens */
+}
+
+
+.socials {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: var(--cor1); /* Slightly different shade for distinction */
+    border: var(--cor1) solid 2px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor1);
+    transition: all 0.5s ease;
+}
+
+.socials:hover {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-shadow: 0 0 4px var(--cor1);
+    border: var(--cor3) solid 2px;
+    box-shadow: inset 0 0 5px 0 var(--cor3), 0 0 10px 0 var(--cor3), 0 0 10px 0 var(--cor1), 0 0 10px 0 var(--cor3);
+    transition: all 0.3s ease;
+}
+
+.icons {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    bottom: 0;
+    width: 100%;
+}
+
+.conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.texto {
+    text-align: justify;
+    padding: 5px;
+    font-size: 20px;
+    color: var(--cor4);
+    text-shadow: var(--cor3) 2px 1px 0px;  
+}
